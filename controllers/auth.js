@@ -4,8 +4,8 @@ const { BadRequestError } = require('../errors/')
 const bcrypt = require('bcryptjs')
 
 const register = async (req, res) => {
-    
-    const user = await User.create({...tempUser})
+
+    const user = await User.create({...req.body})
     res.status(StatusCodes.CREATED).json(user)
 }
 
