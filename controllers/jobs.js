@@ -17,3 +17,11 @@ const updateJob = async (req, res) => {
 const deleteJob = async (req, res) => {
     res.send('delete job')
 }
+
+module.exports = {
+    getAllJobs,
+    getJob,
+    createJob,
+    updateJob,
+    deleteJob,
+}
